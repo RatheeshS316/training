@@ -1,0 +1,21 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+h1{
+    background-color:aqua;
+}
+
+.para{
+    color:brown;
+    background-color:aliceblue;
+    font-size:20px;
+    text-align: center;
+}
+
+#abbr{
+    color:beige;
+    background-color: black;
+    border: 1px solid red;
+}

@@ -1,6 +1,6 @@
 package training.java;
 
-public class variable {
+public class datatypesvariable {
     public static void main(String[] args){
         int name=3;
         String str="ratheesh";

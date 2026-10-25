@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<body>
+    <div>
+        <nav id="navbar">
+            <h2>Counter App</h2>
+            <ul id="menu">
+                <li class="list">home</li>
+                <li class="list">about</li>
+                <li class="list">contact</li>
+            </ul>
+        </nav>
+        <div id="container">
+            <h2 style="padding:5px 80px">Counter</h2>
+            <button class="buttoni">Increase</button>
+            <button class="buttond">Decrease</button>
+            <button class="buttonr">Reset</button>
+            <p id="count">0</p>
+            
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+    #navbar{
+        display:flex;
+        justify-content:space-between;
+        font-family: sans-serif;
+        padding:10px;
+        background-color: #8a7d80;
+        color:white;
+    }
+    
+    #menu{
+        display:flex;
+        gap:25px;
+    }
+
+    .list{
+        font-family: "Poppins";
+        list-style: none;
+    }
+
+    #container{
+        margin:200px 600px;
+        border:2px solid black;
+        width:250px;
+        height:200px;
+        text-align: center; 
+        border-radius:10px;
+    }
+
+    button{
+        padding:10px;
+        margin:10px;
+        border-radius:10px;
+    }
+</style>
+<script>
+    let count = 0;
+
+    const button = document.querySelectorA('.button');
+    const countN = document.getElementById('count');
+    const inc = document.querySelector("buttoni");
+
+    
+    inc.addEventListener("click" , ()=>{
+        count++;
+        countN.textContent = count;
+    })
+
+    const dec = document.getElementById("buttond");
+    dec.addEventListener("click" , ()=>{
+        count--;
+        countN.textContent = count;
+    })
+
+    const reset = document.getElementById("buttonr");
+    reset.addEventListener("click" , ()=>{
+        count = 0;
+        countN.textContent = count;
+    })
+</script>
